@@ -1,0 +1,23 @@
+
+<h3>Dados dos alunos</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Aluno</th>
+      <th>RU</th>
+      <th>Curso</th>
+      <th>Data Nascimento</th>
+    </tr>
+  </thead>
+  <tbody>  
+     <ng-container *ngFor="let dados of aluno">
+       <tr>
+        <td>{{dados.nome}}</td> 
+        <td>{{dados.ru}}</td>
+        <td>{{dados.curso}}</td> 
+        <td>{{dados.dataNascimento}}</td>       
+       </tr>
+     </ng-container> 
+  </tbody>
+  
+</table>
